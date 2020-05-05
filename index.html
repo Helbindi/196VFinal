@@ -1,0 +1,553 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Final Project</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Final Project: Explanatory Narrative</h1>
+
+  <p>
+    <strong>Andy Zhu</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    MTGJSON is an open-source project that catalogs all Magic: The Gathering cards into a portable format.
+    It is produced by a group of dedicated fans maintaining and supplying data from multiple sources and approved partners.
+    Since quarantine started, I have been trying to get back into MTG since it has a free online platform (MTG Arena).
+    MTG was first introduced in 1993, since then it has implemented and updated new rules and cards every year. There is
+    a lot to process when first starting the game. I was curious whether visualizations created from this dataset could
+    be useful to explaining the game.
+  </p>
+
+  <p>
+    The data is available online at:
+    <strong>
+      <a href="https://mtgjson.com/">MTGJSON</a>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li>Outside of the rules of the game, what factors about the game may confuse or overwhelm the players?</li>
+    <li>When new cards are released, are they evenly distributed? Are the developers trying to promote diversity?</li>
+    <li>I heard getting into MTG can be expensive. Is it not possible to play without spending large amounts of money?</li>
+    <li>...</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+  <!-- Card Types -->
+  <div class="entry">
+    <h1><a href="https://mtg.gamepedia.com/Card_type">Card Types in MTG</a></h1>
+    <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/2/2c/Parts_of_a_Magic_card.jpg/700px-Parts_of_a_Magic_card.jpg?version=af7520c405aebcbd1bc15343f59fdead">
+
+    <h2>Permanents</h2>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/c/c7/Artifact_symbol.svg?version=a98e05f18439b02602d867605a0dc74f" width="42" height="42"/>
+      </summary>
+      <h1>Artifacts</h1>
+      Artifacts are permanents that represent magical items, animated constructs, pieces of equipment, or other inanimate objects and devices.
+      <br><br><img src="https://www.cardkingdom.com/images/magic-the-gathering/dominaria/weatherlight-16872-medium.jpg">
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/8/81/Creature_symbol.svg?version=90a00d36e256606156ad81422200cff4" width="42" height="42"/>
+      </summary>
+      <h1>Creatures (Tribal)</h1>
+      Creatures may represent warriors, minions, beats and monsters that have an attack and toughness value. Thus they can attack the opponent and block the attacks of the opponent's creatures.
+      <br><br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447278&type=card">
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/0/01/Enchantment_symbol.svg?version=e14069c443575b4d6fc296159e6a8cb8" width="42" height="42"/>
+      </summary>
+      <h1>Enchantment</h1>
+      Enchantments represent persistent magical effects, usually remaining in play indefinitely. Most have continuous or triggered abilities, but some have abilities that can be activated by their controllers.
+      <br><br><img src="https://images-na.ssl-images-amazon.com/images/I/41V4ZjFsiqL._AC_.jpg">
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/3/37/Land_symbol.svg?version=7a2337f0371c1d8945ce0b58dcd1db68" width="42" height="42"/>
+      </summary>
+      <h1>Land</h1>
+      Lands represent locations that the player controls which generate mana for the player to play other cards.
+      You can only play one land on the player's turn unless stated otherwise.
+      <br><br><img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=269629&type=card">
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/2/2f/PW.svg?version=d7e59293a9280abe903cc66ba8ec3d23" width="42" height="42"/>
+      </summary>
+      <h1>Planeswalker</h1>
+      Planeswalkers represent powerful beings within the game world and thematically also represent identities of the player. As cards, Planeswalkers
+      are played with an initial amount of loyalty counters which act as their in-game resource to survive or use their abilities.
+      Playing a duplicate copy of a Planeswalker that is already on the board will destroy the initial one. Similar to the Legendary rule.
+      <br><br><img src="https://crystalcommerce-assets.s3.amazonaws.com/photos/6429406/large/en_HRyhlTHGdU.png?1523639867" />
+    </details>
+
+    <h2>Non-permanents</h2>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/8/82/Instant_symbol.svg?version=8bc972c503063165c63bcc14ba7a20cc" width="42" height="42"/>
+      </summary>
+      <h1>Instant</h1>
+      Instants are one-shot or short-term magical spells that the player can use at any time including on the opponent's turn.
+      <br><br><img src="https://www.cardkingdom.com/images/magic-the-gathering/2010-core-set/lightning-bolt-5502-medium.jpg">
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/4/4f/Sorcery_symbol.svg?version=6d89e6459f6319765bf2dd60bd847a0e" width="42" height="42"/>
+      </summary>
+      <h1>Sorcery</h1>
+      Like Instants, Sorcery are one-shot or short-term magical spells but they can only be played on the player's main phase and only when nothing else is on the stack.
+      <br><br><img src="https://img.scryfall.com/cards/large/front/2/6/269af993-4894-4bf1-b55a-af4d736cb3cc.jpg?1572893045" width="300" height="400">
+    </details>
+  </div>
+
+  <!-- Card Colors -->
+  <div class="entry">
+    <h1><a href="https://mtg.gamepedia.com/Color"> Basic Colors in MTG</a></h1>
+    <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/e/e1/Color_Wheel.jpg/300px-Color_Wheel.jpg?version=7316a9177cd237af8ed7e85088c9e531" width="400" height="400">
+
+    <h1><a href="https://mtg.gamepedia.com/Multicolored">Dual Colors in MTG</a></h1>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/3/39/WU.svg?version=232a22b0685726aea12a004a6880576c" width="42" height="42"/>
+      </summary>
+      <h1>White-Blue</h1>
+      White-Blue is slow and steady. Typical white-blue decks stall the game and let the users cast their major spells in the late game.
+      <br><br>Common mechanics: Flying, Flash, tapping, effects that prevent creatures from attacking or blocking, returning permanents to hand, counterspells, temporarily exiling permanents
+      <br><br>Common creature types: Birds, Kithkin, Wizards
+      <br><br>Ravnica guild: Azorius Senate
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/3/37/Azorius_Logo.png/21px-Azorius_Logo.png?version=dbd7abaff55d53637247c0f641afede8" />
+      <br><br> <a href="https://mtg.gamepedia.com/Azorius_Senate"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/1/13/UB.svg?version=49f4f042b1df329b8801f8862ca4853a" width="42" height="42"/>
+      </summary>
+      <h1>Blue-Black</h1>
+      Blue-black is related to secrets and forbidden knowledge. Blue's emphasis on information and black's solitary nature combine to create a very secretive color pair. The opponents of Blue-Black decks often realize that they are going to lose when it is too late.
+      <br><br>Common mechanics: Milling, card draw, discard, library manipulation, casting from graveyard, large creatures with big drawbacks, unblockability
+      <br><br>Common creature types: Merfolk, Faeries, Rogues, Assassins, Wizards
+      <br><br>Ravnica guild: House Dimir
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/6/60/Dimir_Logo.png/21px-Dimir_Logo.png?version=e9ae38a442be7485624763208296984f" />
+      <br><br> <a href="https://mtg.gamepedia.com/House_Dimir"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/b/bf/BR.svg?version=a171b03927453e391b73a15d4c28bd6a" width="42" height="42"/>
+      </summary>
+      <h1>Black-Red</h1>
+      Black's anti-sociality and Red's hedonism combine to create a very sadistic and sociopathic color pair. Black-red decks typically prefer overwhelming opponents at all cost, often at the expense of their own creatures and even their users' life total.
+      <br><br>Common mechanics: Haste, Wither, spells and creature that are undercosted but have drawbacks hurt the casters, sacrifice, direct damage/life loss, disallowing life gain, power boosting, +X/-X effects
+      <br><br>Common creature types: Demons, Elementals, Goblins, Devils
+      <br><br>Ravnica Guild: Cult of Rakdos
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/f/f8/Rakdos_Logo.png/21px-Rakdos_Logo.png?version=a35865837349642102318b1dbc1ad10c" />
+      <br><br> <a href="https://mtg.gamepedia.com/Cult_of_Rakdos"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/2/24/RG.svg?version=ee0ca9493157b8693c939f5ee9e107b1" width="42" height="42"/>
+      </summary>
+      <h1>Red-Green</h1>
+      Red-Green is very unthinking, considering the fact that it has red's impulsiveness and green's preference for instinct over the mind. Red-Green decks are typically highly aggressive and attempt to overwhelm their opponents with pure strength.
+      <br><br>Common mechanics: Trample, Haste, Reach, Land Removal, Fight, +X/+X effects, Fast mana, one-sided fight (dealing damage equal to the power of a creature you control to an opponent's creature), direct damage to flying creatures, Aggressive creatures
+      <br><br>Common creature types: Warriors, Shamans, Goblins, Beasts
+      <br><br>Ravnica Guild: Gruul Clans
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/e/e9/Gruul_Logo.png/21px-Gruul_Logo.png?version=40ca2bf12a39e7d75b087e3fc48c373f" />
+      <br><br> <a href="https://mtg.gamepedia.com/Gruul_Clans"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/2/2e/GW.svg?version=e87e21781720539ea7d37268175b64c4" width="42" height="42"/>
+      </summary>
+      <h1>Green-White</h1>
+      Green-White detests black's individualistic attitude and is the color pair of group and unity. Green-White thrives in being in groups.
+      <br><br>Common mechanics: Vigilance, creature tokens, protecting creatures, creature boosting/pump, life gain, enchantments
+      <br><br>Common creature types: Elves, Centaurs, Knights
+      <br><br>Ravnica Guild: Selesnya Conclave
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/0/08/Selesnya_Logo.png/21px-Selesnya_Logo.png?version=679c11a61047310feb424f8fe0ee41a7" />
+      <br><br> <a href="https://mtg.gamepedia.com/Selesnya_Conclave"> More information</a>
+    </details>
+
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/a/a6/WB.svg?version=88791cf4b6887eb5890f7c21988c9138" width="42" height="42"/>
+      </summary>
+      <h1>White-Black</h1>
+      White-Black as a color can represent corruption or dishonesty under the clever veil of mercy and/or kindness. It may also represent the balance of good and evil, where the world is seen as a grey area in times of war or strife. As a mechanic, White-black is about gradually killing one's enemies, with white slowing the game down and black destroying opponent's creatures and draining their life totals.
+
+      <br><br>Common mechanics: Lifelink, parasitism, life gain, return creatures from graveyard, massive removal, permanent exiling, extort
+
+      <br><br>Common creature types: Spirits, Clerics, Knights, Vampires
+
+      <br><br>Ravnica guild: Orzhov Syndicate
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/3/38/Orzhov_Logo.png/21px-Orzhov_Logo.png?version=8fe3da18b294c3509e670c80395ae5f6" />
+      <br><br> <a href="https://mtg.gamepedia.com/Orzhov_Syndicate"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/0/09/UR.svg?version=a3c71004ad621a943a3e2e1ba5ca19f2" width="42" height="42"/>
+      </summary>
+      <h1>Blue-Red</h1>
+      After combining Blue's desire for progress and red's impulsiveness, Blue-Red is a color pair that focuses on innovation.
+
+      <br><br>Common mechanics: Prowess, Jump-start, Power/toughness switching, reusing instants/sorceries, time manipulation (e.g. taking additional turns), copying spells and abilities, changing targets of other spells and abilities, looting, gaining control of permanents
+
+      <br><br>Common creature types: Wizards, Weirds, Noggles, Dragons
+
+      <br><br>Ravnica Guild: Izzet League
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/3/3a/Izzet_Logo.png/21px-Izzet_Logo.png?version=ec367bf25b0ee967ffb17d67175adb93" />
+      <br><br> <a href="https://mtg.gamepedia.com/Izzet_League"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/6/62/BG.svg?version=fddd1a5b9f18ef94f88bb257a7cbf087" width="42" height="42"/>
+      </summary>
+      <h1>Black-Green</h1>
+      Black-Green embodies the cycle of life and death and thrives on exploiting the cycle. Black-Green capitalizes on creatures that slowly grow over time or those that have special effects when they die.
+
+      <br><br> Common mechanics: Regeneration, Deathtouch, Undergrowth, +1/+1 counters, reusing creature cards, exiling from graveyard, destruction of non-land permanents, return cards (any, permanent, or creature card/s) from graveyard
+
+      <br><br>Common creature types: Zombies, Insects, Elves, Plants, Shaman
+
+      <br><br>Ravnica Guild: Golgari Swarm
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/7/76/Golgari_Logo.png/21px-Golgari_Logo.png?version=f919b89c1e3c3f6745c2cb8c309cbeff" />
+      <br><br> <a href="https://mtg.gamepedia.com/Golgari_Swarm"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/6/6b/RW.svg?version=5d6b834931b240077c61104650cad3e9" width="42" height="42"/>
+      </summary>
+      <h1>Red-White</h1>
+      Red-White represents enforcement of justice, as a mixture of red's readiness to take action and white's insistence on honor.
+
+      <br><br>Common mechanics: First strike, Double strike, small creatures, bonuses to attacking creatures, damage to attacking or blocking creatures
+
+      <br><br>Common creature types: Soldiers, Giants, Warriors, Angels
+
+      <br><br>Ravnica Guild: Boros Legion
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/8/89/Boros_Logo.png/21px-Boros_Logo.png?version=e206df645fb192aabd8e112b3f444696" />
+      <br><br> <a href="https://mtg.gamepedia.com/Boros_Legion"> More information</a>
+    </details>
+    <details>
+      <summary>
+        <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/6/6f/GU.svg?version=b97a9598b47862c3273486afc94fc689" width="42" height="42"/>
+      </summary>
+      <h1>Green-Blue</h1>
+      Green-Blue is the color pair of progress. Both green and blue enjoy seeing the world evolve, although the former prefers reaching it by natural selection while the latter prefers artificial means.
+
+      <br><br>Common mechanics: Flash, Adapt, Shroud, Hexproof, card draw, search library, +1/+1 counters
+
+      <br><br>Common creature types: Wizards, Beasts, Mutants, Merfolk
+
+      <br><br>Ravnica Guild: Simic Combine
+      <img src="https://gamepedia.cursecdn.com/mtgsalvation_gamepedia/thumb/3/3e/Simic_Logo.png/21px-Simic_Logo.png?version=78d6d550a33bd001351f65582891aa2d" />
+      <br><br> <a href="https://mtg.gamepedia.com/Simic_Combine"> More information</a>
+    </details>
+  </div>
+
+  <!-- Deck -->
+  <div class="entry">
+    <p class="caption">
+    <h1>Deck</h1>
+      A regular deck needs a minimum of 60 cards but there is no maximum restriction to deck size.
+      A deck can consists of any combination of permanents or non-permanents but you can only have a maximum of
+      4 copies of a card except for basic lands and a few exceptions.
+
+    </p>
+  </div>
+
+  <!-- Embed Tableau Visualization -->
+  <div class="entry">
+    <!-- Embed Tableau Visualization -->
+    <div class='tableauPlaceholder' id='viz1588539300496' style='position: relative'>
+      <noscript><a href='#'>
+        <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MT&#47;MTG_15885392848740&#47;AtleastOne&#47;1_rss.png' style='border: none' />
+      </a></noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='MTG_15885392848740&#47;AtleastOne' />
+        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MT&#47;MTG_15885392848740&#47;AtleastOne&#47;1.png' />
+        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='filter' value='publish=yes' />
+      </object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1588539300496');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <!-- Embed Tableau Visualization -->
+  <div class="entry">
+    <!-- Embed Tableau Visualization -->
+    <div class='tableauPlaceholder' id='viz1588539466909' style='position: relative'><noscript><a href='#'>
+      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MultipleCopies&#47;Multiple&#47;1_rss.png' style='border: none' />
+    </a></noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+        <param name='name' value='MultipleCopies&#47;Multiple' /><param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MultipleCopies&#47;Multiple&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='filter' value='publish=yes' />
+      </object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1588539466909');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <p class="caption">
+      <br>Turn 1 represents the probability of your starting hand (7 cards).
+      While sequential turns represent your hand after a single draw afterwards (7 + n draws).
+    <ul class = content>
+      <li> Four copies is generally best for cards you want in almost every situation. The bread and butter of the deck.</li>
+      <li> Three copies is generally best for cards you want to play but comes with some restrictions(Legendary rule, Planeswalker, High cost).</li>
+      <li> Two copies is for cards that are nice to have in some situations but never every or has restrictions(High cost, etc).</li>
+    </ul>
+    </p>
+  </div>
+
+  <!-- Opening Lands -->
+  <div class="entry">
+    <h1>Probability of Opening Lands in Starting Hand</h1>
+    <embed src="parallelMTG.html"  width="900" height="525">
+    <p class="caption">
+      The probability of having 0-7 lands in your starting hand depending on how many lands are in the deck.
+    <ul class = content>
+      <li> 20-22 Lands have the highest probability of starting with 0-2 land but falls off afterwards.
+           Good for decks that run mainly low cost cards.</li>
+      <li> 24-27 Lands have the lowest probability of starting with 0-2 land but the highest probability of starting with 3-4 land.
+           Good for decks that don't run many low cost cards and need to play lands every turn to get going.</li>
+      <li> 23 Lands is right in the middle with a decent chance of starting with 2-3 lands.</li>
+    </ul>
+    </p>
+  </div>
+
+  <!-- Embed Observable Visualization -->
+  <div class="entry">
+    <!-- Embed Observable Visualization -->
+    <div id="observablehq-c5388559"></div>
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@summurd/latest-mtg-standard-sets-2020.js?v=3";
+      const inspect = Inspector.into("#observablehq-c5388559");
+      (new Runtime).module(define, name => (name === "chart") && inspect());
+    </script>
+    <p class="caption">
+      <br>ENTER IMAGE CAPTION HERE.
+    </p>
+  </div>
+
+  <!-- D3.js Visualization -->
+  <div class="entry">
+    <h1>Converted Mana Cost among Standard Sets</h1>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <!-- add buttons -->
+    <div id="option">
+      <input name="IkoriaButton"
+             type="button"
+             value="IkoriaCMC"
+             onclick="IkoriaData()" />
+      <input name="TherosButton"
+             type="button"
+             value="TherosCMC"
+             onclick="TherosData()" />
+      <input name="EldraineButton"
+             type="button"
+             value="EldraineCMC"
+             onclick="EldraineData()" />
+    </div>
+    <br>
+    <h1>Prices among Standard Sets</h1>
+    <!-- add buttons -->
+    <div id="option2">
+      <input name="IkoriaButton2"
+             type="button"
+             value="IkoriaPrice"
+             onclick="IkoriaPrices()" />
+      <input name="TherosButton2"
+             type="button"
+             value="TherosPrice"
+             onclick="TherosPrices()" />
+      <input name="EldraineButton2"
+             type="button"
+             value="EldrainePrice"
+             onclick="EldrainePrices()" />
+    </div>
+
+    <!-- Create a div where the graph will take place -->
+    <div id="my_dataviz"></div>
+
+    <!-- Load color palettes -->
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <!-- Tooltip style -->
+    <style>
+      .tooltip {
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+        min-width: 400px;
+        text-align: left;
+        color: white;
+      }
+    </style>
+
+    <script src="MTG_heatmap.js"></script>
+    <script src="MTG_boxplot.js"></script>
+    <p class="caption">
+    <br>ENTER IMAGE CAPTION HERE.
+    </p>
+  </div>
+
+  <!-- Embed Tableau Visualization -->
+  <div class="entry">
+    <!-- Embed Tableau Visualization -->
+    <div class='tableauPlaceholder' id='viz1588569581851' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lu&#47;Lurrus&#47;Lurrus&#47;1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+        <param name='name' value='Lurrus&#47;Lurrus' /><param name='tabs' value='no' />
+        <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Lu&#47;Lurrus&#47;Lurrus&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1588569581851');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <p class="caption">
+      <br>ENTER IMAGE CAPTION HERE.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="IMAGE_FILENAME" />
+    <p class="caption">
+    ENTER IMAGE CAPTION HERE.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="IMAGE_FILENAME" />
+    <p class="caption">
+    ENTER IMAGE CAPTION HERE.
+    </p>
+  </div>
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+    WRITE FINAL SUMMARY HERE.
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
