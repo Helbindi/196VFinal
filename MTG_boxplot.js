@@ -12,7 +12,7 @@ var svg = d3.select("#my_dataviz")
     .append("g")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
- */
+*/
 
 // create a tooltip
 var tooltip = d3.select("#my_dataviz")
@@ -67,7 +67,7 @@ function IkoriaPrices() {
         // Show the Y scale
         var y = d3.scaleBand()
             .range([ height, 0 ])
-            .domain(["Common", "Uncommon", "Rare", "Mythic"])
+            .domain(["C", "U", "Rare", "Mythic"])
             .padding(.4);
         svg.append("g")
             .call(d3.axisLeft(y).tickSize(0))
@@ -176,7 +176,7 @@ function TherosPrices() {
         // Show the Y scale
         var y = d3.scaleBand()
             .range([ height, 0 ])
-            .domain(["Common", "Uncommon", "Rare", "Mythic"])
+            .domain(["C", "U", "Rare", "Mythic"])
             .padding(.4);
         svg.append("g")
             .call(d3.axisLeft(y).tickSize(0))
@@ -285,7 +285,7 @@ function EldrainePrices() {
         // Show the Y scale
         var y = d3.scaleBand()
             .range([ height, 0 ])
-            .domain(["Common", "Uncommon", "Rare", "Mythic"])
+            .domain(["C", "U", "Rare", "Mythic"])
             .padding(.4);
         svg.append("g")
             .call(d3.axisLeft(y).tickSize(0))

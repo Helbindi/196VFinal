@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = {top: 20, right: 25, bottom: 30, left: 40},
-    width = 450 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+var margin = {top: 20, right: 70, bottom: 30, left: 40},
+    width = 600 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -15,7 +15,7 @@ var svg = d3.select("#my_dataviz")
 // Build color scale
 var myColor = d3.scaleSequential()
     .interpolator(d3.interpolateInferno)
-    .domain([0,8])
+    .domain([0, 10]);
 
 // create a tooltip
 var tooltip = d3.select("#my_dataviz")
@@ -38,7 +38,7 @@ var mouseover = function(d) {
 }
 var mousemove = function(d) {
     tooltip
-        .html("The exact value of<br>this cell is: " + d.value)
+        .html("The exact value of this cell is: " + d.value)
         .style("left", (d3.mouse(this)[0]+70) + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
 }
@@ -49,8 +49,6 @@ var mouseleave = function(d) {
         .style("stroke", "none")
         .style("opacity", 0.8)
 }
-
-IkoriaData()
 
 // Use Ikoria dataset on mouseclick
 function IkoriaData() {
@@ -99,6 +97,31 @@ function IkoriaData() {
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave)
+
+        // Add a legend for the color values.
+        var legend = svg.selectAll(".legend")
+            .data(myColor.ticks(10).slice(1).reverse())
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(" + (width + 20) + "," + (20 + i * 20) + ")"; });
+
+        legend.append("rect")
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", myColor);
+
+        legend.append("text")
+            .attr("x", 26)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .text(String);
+
+        svg.append("text")
+            .attr("class", "label")
+            .attr("x", width + 20)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .text("Value");
     })
 }
 
@@ -149,6 +172,31 @@ function TherosData() {
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave)
+
+        // Add a legend for the color values.
+        var legend = svg.selectAll(".legend")
+            .data(myColor.ticks(10).slice(1).reverse())
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(" + (width + 20) + "," + (20 + i * 20) + ")"; });
+
+        legend.append("rect")
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", myColor);
+
+        legend.append("text")
+            .attr("x", 26)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .text(String);
+
+        svg.append("text")
+            .attr("class", "label")
+            .attr("x", width + 20)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .text("Value");
     })
 }
 
@@ -199,5 +247,30 @@ function EldraineData() {
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseleave", mouseleave)
+
+        // Add a legend for the color values.
+        var legend = svg.selectAll(".legend")
+            .data(myColor.ticks(10).slice(1).reverse())
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function(d, i) { return "translate(" + (width + 20) + "," + (20 + i * 20) + ")"; });
+
+        legend.append("rect")
+            .attr("width", 20)
+            .attr("height", 20)
+            .style("fill", myColor);
+
+        legend.append("text")
+            .attr("x", 26)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .text(String);
+
+        svg.append("text")
+            .attr("class", "label")
+            .attr("x", width + 20)
+            .attr("y", 10)
+            .attr("dy", ".35em")
+            .text("Value");
     })
 }

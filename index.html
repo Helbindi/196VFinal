@@ -9,7 +9,7 @@ body {
   margin: 0 auto 0 auto;
   padding: 0;
   background-color: #33333f;
-  width: 840px;
+  width: 900px;
   font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
   font-size: 0.95em;
 }
@@ -79,6 +79,10 @@ ol { margin: 1em; }
     MTG was first introduced in 1993, since then it has implemented and updated new rules and cards every year. There is
     a lot to process when first starting the game. I was curious whether visualizations created from this dataset could
     be useful to explaining the game.
+
+    <br>There are over 20,000 unique cards in MTG, thus I am limited the dataset to the latest three sets in Standard
+        because I am unfamiliar with the other formats and these three sets were released after I stopped playing, so I
+        am interested in learning about them.
   </p>
 
   <p>
@@ -94,7 +98,7 @@ ol { margin: 1em; }
   <ol>
     <li>Outside of the rules of the game, what factors about the game may confuse or overwhelm the players?</li>
     <li>When new cards are released, are they evenly distributed? Are the developers trying to promote diversity?</li>
-    <li>I heard getting into MTG can be expensive. Is it not possible to play without spending large amounts of money?</li>
+    <li>I heard getting into MTG can be expensive. Is it possible to play without spending large amounts of money?</li>
     <li>...</li>
   </ol>
 </section>
@@ -326,9 +330,9 @@ ol { margin: 1em; }
     </p>
   </div>
 
-  <!-- Embed Tableau Visualization -->
+  <!-- Embed Tableau Visualizations -->
   <div class="entry">
-    <!-- Embed Tableau Visualization -->
+    <!-- First Embed Tableau Visualization -->
     <div class='tableauPlaceholder' id='viz1588539300496' style='position: relative'>
       <noscript><a href='#'>
         <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MT&#47;MTG_15885392848740&#47;AtleastOne&#47;1_rss.png' style='border: none' />
@@ -354,11 +358,8 @@ ol { margin: 1em; }
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
-  </div>
 
-  <!-- Embed Tableau Visualization -->
-  <div class="entry">
-    <!-- Embed Tableau Visualization -->
+    <!-- Second Embed Tableau Visualization -->
     <div class='tableauPlaceholder' id='viz1588539466909' style='position: relative'><noscript><a href='#'>
       <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MultipleCopies&#47;Multiple&#47;1_rss.png' style='border: none' />
     </a></noscript>
@@ -383,6 +384,7 @@ ol { margin: 1em; }
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
+
     <p class="caption">
       <br>Turn 1 represents the probability of your starting hand (7 cards).
       While sequential turns represent your hand after a single draw afterwards (7 + n draws).
@@ -394,12 +396,13 @@ ol { margin: 1em; }
     </p>
   </div>
 
-  <!-- Opening Lands -->
+  <!-- Embed Html Visualizations -->
   <div class="entry">
     <h1>Probability of Opening Lands in Starting Hand</h1>
     <embed src="parallelMTG.html"  width="900" height="525">
     <p class="caption">
-      The probability of having 0-7 lands in your starting hand depending on how many lands are in the deck.
+      * Filter and highlight lines by clicking and dragging on a column. *
+      <br><br>The percentage probability of having 0-7 lands in your starting hand depending on how many lands are in the deck.
     <ul class = content>
       <li> 20-22 Lands have the highest probability of starting with 0-2 land but falls off afterwards.
            Good for decks that run mainly low cost cards.</li>
@@ -421,7 +424,8 @@ ol { margin: 1em; }
       (new Runtime).module(define, name => (name === "chart") && inspect());
     </script>
     <p class="caption">
-      <br>ENTER IMAGE CAPTION HERE.
+      <br>* Click a section to zoom in, or the center to zoom out. *
+      <br><br> Summary of a Set (~300 cards) in MTG by distribution.
     </p>
   </div>
 
@@ -487,7 +491,22 @@ ol { margin: 1em; }
     <script src="MTG_heatmap.js"></script>
     <script src="MTG_boxplot.js"></script>
     <p class="caption">
-    <br>ENTER IMAGE CAPTION HERE.
+      <br>* Click on a button to show a graph. Hover over a node to get an exact value * <br>
+      <br>Heatmap: Accumulation of CMC among color types of a specific Standard set.
+      <br>Looking at all three sets, The majority of cards are between CMC 2 and 4 regardless of color.
+
+      <br><br>Boxplot: Prices among rarity types of a specific Standard set.
+      <br>From the boxplot, it is clear that rarity plays a role a cards price. Amongst these different
+          rarity, their prices are not the same for their rarity counterparts. Disregarding outliers,
+          the prices of cards typically cluster into three groups: low, medium, high.
+      <br><br>It is also shown that the majority of cards are actually in the low cost category. While they
+          may not be as good as the other higher cost cards, they are playable on a leveled field.
+          One such way is a special format called Pauper. It has the same rules such as deck size
+          and copy limit but the cards in the deck must all be Common rarity. Also if the player is not playing
+          in a competitive environment but with a small group, rules can be applied to deck building such
+          as limiting the price of a total deck, no Mythic or Rare cards, or no cards over a specific price.
+          This is a way to play MTG without worrying about the cost.
+
     </p>
   </div>
 
@@ -522,21 +541,12 @@ ol { margin: 1em; }
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
     <p class="caption">
-      <br>ENTER IMAGE CAPTION HERE.
-    </p>
-  </div>
-
-  <div class="entry">
-    <img src="IMAGE_FILENAME" />
-    <p class="caption">
-    ENTER IMAGE CAPTION HERE.
-    </p>
-  </div>
-
-  <div class="entry">
-    <img src="IMAGE_FILENAME" />
-    <p class="caption">
-    ENTER IMAGE CAPTION HERE.
+      <br>This is the price history of Lurrus of the Dream Den from the Theros Beyond Death set.
+          This card cost twice as much as other rare cards in the same set. On April 18th,
+          The price was around the same as the other rare cards but by the 20th, the card now cost
+          twice as much. The reason is due to demand - after the 18th, people started to realized
+          the potential and strengths of this card as shown in the increased appearances of a deck
+          featuring this card called Rakdos Lurrus in a MTG Tournaments.
     </p>
   </div>
 

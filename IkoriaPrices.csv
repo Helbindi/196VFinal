@@ -35,30 +35,30 @@ Mythos of Nethroi,IKO,Rare,2.31
 "Kaheera, the Orphanguard",IKO,Rare,2
 "Jegantha, the Wellspring",IKO,Rare,2
 Bonders' Enclave,IKO,Rare,2
-Heartless Act,IKO,Uncommon,1.99
+Heartless Act,IKO,U,1.99
 Gemrazer,IKO,Rare,1.99
 Emergent Ultimatum,IKO,Rare,1.97
 "Obosh, the Preypiercer",IKO,Rare,1.84
 Slitherwisp,IKO,Rare,1.82
-Sprite Dragon,IKO,Uncommon,1.81
+Sprite Dragon,IKO,U,1.81
 Whirlwind of Thought,IKO,Rare,1.72
 "Umori, the Collector",IKO,Rare,1.69
 Genesis Ultimatum,IKO,Rare,1.49
 Everquill Phoenix,IKO,Rare,1.31
 Titans' Nest,IKO,Rare,1.15
 "Keruga, the Macrosage",IKO,Rare,1.1
-Migration Path,IKO,Uncommon,1
+Migration Path,IKO,U,1
 "Lutri, the Spellchaser",IKO,Rare,1
 "Kogla, the Titan Ape",IKO,Rare,1
 Voracious Greatshark,IKO,Rare,1
 Hunted Nightmare,IKO,Rare,0.99
-Forest (272),IKO,Common,0.99
-Swamp (266),IKO,Common,0.99
+Forest (272),IKO,C,0.99
+Swamp (266),IKO,C,0.99
 Extinction Event,IKO,Rare,0.99
 Crystalline Giant,IKO,Rare,0.99
 Dirge Bat,IKO,Rare,0.99
 Inspired Ultimatum,IKO,Rare,0.99
-Parcelbeast,IKO,Uncommon,0.99
+Parcelbeast,IKO,U,0.99
 Unpredictable Cyclone,IKO,Rare,0.92
 Labyrinth Raptor,IKO,Rare,0.92
 Skycat Sovereign,IKO,Rare,0.89
@@ -70,206 +70,206 @@ Mythos of Illuna,IKO,Rare,0.79
 Cubwarden,IKO,Rare,0.76
 Death's Oasis,IKO,Rare,0.74
 Mythos of Vadrok,IKO,Rare,0.68
-Bastion of Remembrance,IKO,Uncommon,0.65
+Bastion of Remembrance,IKO,U,0.65
 Offspring's Revenge,IKO,Rare,0.59
 Mythos of Brokkos,IKO,Rare,0.59
-Plains (260),IKO,Common,0.58
-Plains (261),IKO,Common,0.58
-Plains (262),IKO,Common,0.58
-Swamp (267),IKO,Common,0.58
-Swamp (268),IKO,Common,0.58
-Mountain (270),IKO,Common,0.58
-Mountain (271),IKO,Common,0.58
-Forest (273),IKO,Common,0.58
-Forest (274),IKO,Common,0.58
-Mountain (269),IKO,Common,0.58
-Call of the Death-Dweller,IKO,Uncommon,0.55
-Regal Leosaur,IKO,Uncommon,0.5
-Mystic Subdual,IKO,Uncommon,0.5
-Frillscare Mentor,IKO,Uncommon,0.5
-Ominous Seas,IKO,Uncommon,0.5
+Plains (260),IKO,C,0.58
+Plains (261),IKO,C,0.58
+Plains (262),IKO,C,0.58
+Swamp (267),IKO,C,0.58
+Swamp (268),IKO,C,0.58
+Mountain (270),IKO,C,0.58
+Mountain (271),IKO,C,0.58
+Forest (273),IKO,C,0.58
+Forest (274),IKO,C,0.58
+Mountain (269),IKO,C,0.58
+Call of the Death-Dweller,IKO,U,0.55
+Regal Leosaur,IKO,U,0.5
+Mystic Subdual,IKO,U,0.5
+Frillscare Mentor,IKO,U,0.5
+Ominous Seas,IKO,U,0.5
 Frondland Felidar,IKO,Rare,0.5
-Cunning Nightbonder,IKO,Uncommon,0.5
-Reconnaissance Mission,IKO,Uncommon,0.5
-Dire Tactics,IKO,Uncommon,0.5
-Neutralize,IKO,Uncommon,0.5
-Insatiable Hemophage,IKO,Uncommon,0.5
-Footfall Crater,IKO,Uncommon,0.49
-Island (263),IKO,Common,0.49
-Island (264),IKO,Common,0.49
-Island (265),IKO,Common,0.49
-Reptilian Reflection,IKO,Uncommon,0.49
-Porcuparrot,IKO,Uncommon,0.48
-Flourishing Fox,IKO,Uncommon,0.48
-Avian Oddity,IKO,Uncommon,0.47
-Necropanther,IKO,Uncommon,0.47
-Flame Spill,IKO,Uncommon,0.45
-Easy Prey,IKO,Uncommon,0.45
-Zenith Flare,IKO,Uncommon,0.44
-Boneyard Lurker,IKO,Uncommon,0.43
-Wingspan Mentor,IKO,Uncommon,0.42
-Duskfang Mentor,IKO,Uncommon,0.42
-Primal Empathy,IKO,Uncommon,0.42
-Barrier Breach,IKO,Uncommon,0.42
-Momentum Rumbler,IKO,Uncommon,0.42
-Lead the Stampede,IKO,Uncommon,0.41
-Majestic Auricorn,IKO,Uncommon,0.41
-Jubilant Skybonder,IKO,Uncommon,0.41
-Channeled Force,IKO,Uncommon,0.41
-Pouncing Shoreshark,IKO,Uncommon,0.4
-Lore Drakkis,IKO,Uncommon,0.4
-Alert Heedbonder,IKO,Uncommon,0.4
-Ketria Crystal,IKO,Uncommon,0.4
-Savai Crystal,IKO,Uncommon,0.4
-Zagoth Crystal,IKO,Uncommon,0.4
-Raugrin Crystal,IKO,Uncommon,0.4
-Will of the All-Hunter,IKO,Uncommon,0.4
-Escape Protocol,IKO,Uncommon,0.4
-Unbreakable Bond,IKO,Uncommon,0.4
-Rooting Moloch,IKO,Uncommon,0.4
-Charge of the Forever-Beast,IKO,Uncommon,0.4
-Boon of the Wish-Giver,IKO,Uncommon,0.4
-Sonorous Howlbonder,IKO,Uncommon,0.4
-Blitz of the Thunder-Raptor,IKO,Uncommon,0.4
-Chittering Harvester,IKO,Uncommon,0.4
-Skull Prophet,IKO,Uncommon,0.4
-Stormwild Capridor,IKO,Uncommon,0.39
-Auspicious Starrix,IKO,Uncommon,0.39
-Archipelagore,IKO,Uncommon,0.39
-Glowstone Recluse,IKO,Uncommon,0.39
-Of One Mind,IKO,Common,0.39
-Back for More,IKO,Uncommon,0.39
-Clash of Titans,IKO,Uncommon,0.39
-Exuberant Wolfbear,IKO,Uncommon,0.39
-General's Enforcer,IKO,Uncommon,0.39
-Valiant Rescuer,IKO,Uncommon,0.39
-Fight as One,IKO,Uncommon,0.39
-Proud Wildbonder,IKO,Uncommon,0.38
-Huntmaster Liger,IKO,Uncommon,0.38
-Pollywog Symbiote,IKO,Uncommon,0.38
-Indatha Crystal,IKO,Uncommon,0.38
-Trumpeting Gnarr,IKO,Uncommon,0.37
-Titanoth Rex,IKO,Uncommon,0.37
-Grimdancer,IKO,Uncommon,0.36
-Savai Thundermane,IKO,Uncommon,0.36
-Ivy Elemental,IKO,Uncommon,0.35
-Keensight Mentor,IKO,Uncommon,0.35
-Sanctuary Smasher,IKO,Uncommon,0.35
-Mysterious Egg,IKO,Common,0.35
-Swallow Whole,IKO,Uncommon,0.35
-Splendor Mare,IKO,Uncommon,0.35
-Void Beckoner,IKO,Uncommon,0.35
-Weaponize the Monsters,IKO,Uncommon,0.35
-Monstrous Step,IKO,Uncommon,0.35
-Sanctuary Lockdown,IKO,Uncommon,0.35
-Hornbash Mentor,IKO,Uncommon,0.35
-Zagoth Mamba,IKO,Uncommon,0.34
-Drannith Stinger,IKO,Common,0.31
-Bushmeat Poacher,IKO,Common,0.26
-Fertilid,IKO,Common,0.26
-Whisper Squad,IKO,Common,0.26
-Fire Prophecy,IKO,Common,0.26
-Keep Safe,IKO,Common,0.26
-Farfinder,IKO,Common,0.26
-Heightened Reflexes,IKO,Common,0.25
-Memory Leak,IKO,Common,0.25
-Glimmerbell,IKO,Common,0.25
-Thieving Otter,IKO,Common,0.25
-Ferocious Tigorilla,IKO,Common,0.25
-Boot Nipper,IKO,Common,0.25
-Corpse Churn,IKO,Common,0.25
-Prickly Marmoset,IKO,Common,0.25
-Dark Bargain,IKO,Common,0.25
-Excavation Mole,IKO,Common,0.25
-Mutual Destruction,IKO,Common,0.25
-Survivors' Bond,IKO,Common,0.25
-Scoured Barrens,IKO,Common,0.25
-Thornwood Falls,IKO,Common,0.25
-Patagia Tiger,IKO,Common,0.25
-Pyroceratops,IKO,Common,0.25
-Tentative Connection,IKO,Common,0.25
-Helica Glider,IKO,Common,0.25
-Frost Lynx,IKO,Common,0.25
-Spontaneous Flight,IKO,Common,0.25
-Garrison Cat,IKO,Common,0.25
-Tranquil Cove,IKO,Common,0.25
-Nightsquad Commando,IKO,Common,0.25
-Wind-Scarred Crag,IKO,Common,0.25
-Frenzied Raptor,IKO,Common,0.25
-Almighty Brushwagg,IKO,Common,0.25
-Spelleater Wolverine,IKO,Common,0.25
-Blitz Leech,IKO,Common,0.25
-Serrated Scorpion,IKO,Common,0.25
-Aegis Turtle,IKO,Common,0.25
-Flycatcher Giraffid,IKO,Common,0.25
-Blisterspit Gremlin,IKO,Common,0.25
-Suffocating Fumes,IKO,Common,0.25
-Humble Naturalist,IKO,Common,0.25
-Blazing Volley,IKO,Common,0.25
-Anticipate,IKO,Common,0.25
-Frostveil Ambush,IKO,Common,0.25
-Essence Scatter,IKO,Common,0.25
-Unexpected Fangs,IKO,Common,0.25
-Shredded Sails,IKO,Common,0.25
-Blood Curdle,IKO,Common,0.25
-Adventurous Impulse,IKO,Common,0.25
-Lava Serpent,IKO,Common,0.25
-Savai Sabertooth,IKO,Common,0.25
-Wingfold Pteron,IKO,Common,0.25
-Unlikely Aid,IKO,Common,0.25
-Dead Weight,IKO,Common,0.25
-Raking Claws,IKO,Common,0.25
-Ram Through,IKO,Common,0.25
-Phase Dolphin,IKO,Common,0.25
-Cavern Whisperer,IKO,Common,0.25
-Plummet,IKO,Common,0.25
-Dreamtail Heron,IKO,Common,0.25
-Adaptive Shimmerer,IKO,Common,0.25
-Durable Coilbug,IKO,Common,0.25
-Gust of Wind,IKO,Common,0.25
-Convolute,IKO,Common,0.25
-Blade Banish,IKO,Common,0.25
-Honey Mammoth,IKO,Common,0.25
-Coordinated Charge,IKO,Common,0.25
-Sleeper Dart,IKO,Common,0.25
-Daysquad Marshal,IKO,Common,0.25
-Vulpikeet,IKO,Common,0.25
-Greater Sandwurm,IKO,Common,0.25
-Hampering Snare,IKO,Common,0.25
-Springjaw Trap,IKO,Common,0.25
-Divine Arrow,IKO,Common,0.25
-Imposing Vantasaur,IKO,Common,0.25
-Drannith Healer,IKO,Common,0.25
-Bloodfell Caves,IKO,Common,0.25
-Sudden Spinnerets,IKO,Common,0.25
-Maned Serval,IKO,Common,0.25
-Blossoming Sands,IKO,Common,0.25
-Perimeter Sergeant,IKO,Common,0.25
-Crystacean,IKO,Common,0.25
-Snare Tactician,IKO,Common,0.25
-Swiftwater Cliffs,IKO,Common,0.25
-Solid Footing,IKO,Common,0.25
-Startling Development,IKO,Common,0.25
-Gloom Pangolin,IKO,Common,0.25
-Bristling Boar,IKO,Common,0.25
-Cloudpiercer,IKO,Common,0.25
-Pacifism,IKO,Common,0.25
-Fully Grown,IKO,Common,0.25
-Thwart the Enemy,IKO,Common,0.25
-Go for Blood,IKO,Common,0.25
-Forbidden Friendship,IKO,Common,0.25
-Capture Sphere,IKO,Common,0.25
-Cathartic Reunion,IKO,Common,0.25
-Wilt,IKO,Common,0.25
-Mosscoat Goriak,IKO,Common,0.25
-Light of Hope,IKO,Common,0.25
-Checkpoint Officer,IKO,Common,0.25
-Essence Symbiote,IKO,Common,0.25
-Migratory Greathorn,IKO,Common,0.25
-Dismal Backwater,IKO,Common,0.25
-Evolving Wilds,IKO,Common,0.25
-Lurking Deadeye,IKO,Common,0.25
-Jungle Hollow,IKO,Common,0.25
-Rumbling Rockslide,IKO,Common,0.25
-Facet Reader,IKO,Common,0.25
-Rugged Highlands,IKO,Common,0.25
+Cunning Nightbonder,IKO,U,0.5
+Reconnaissance Mission,IKO,U,0.5
+Dire Tactics,IKO,U,0.5
+Neutralize,IKO,U,0.5
+Insatiable Hemophage,IKO,U,0.5
+Footfall Crater,IKO,U,0.49
+Island (263),IKO,C,0.49
+Island (264),IKO,C,0.49
+Island (265),IKO,C,0.49
+Reptilian Reflection,IKO,U,0.49
+Porcuparrot,IKO,U,0.48
+Flourishing Fox,IKO,U,0.48
+Avian Oddity,IKO,U,0.47
+Necropanther,IKO,U,0.47
+Flame Spill,IKO,U,0.45
+Easy Prey,IKO,U,0.45
+Zenith Flare,IKO,U,0.44
+Boneyard Lurker,IKO,U,0.43
+Wingspan Mentor,IKO,U,0.42
+Duskfang Mentor,IKO,U,0.42
+Primal Empathy,IKO,U,0.42
+Barrier Breach,IKO,U,0.42
+Momentum Rumbler,IKO,U,0.42
+Lead the Stampede,IKO,U,0.41
+Majestic Auricorn,IKO,U,0.41
+Jubilant Skybonder,IKO,U,0.41
+Channeled Force,IKO,U,0.41
+Pouncing Shoreshark,IKO,U,0.4
+Lore Drakkis,IKO,U,0.4
+Alert Heedbonder,IKO,U,0.4
+Ketria Crystal,IKO,U,0.4
+Savai Crystal,IKO,U,0.4
+Zagoth Crystal,IKO,U,0.4
+Raugrin Crystal,IKO,U,0.4
+Will of the All-Hunter,IKO,U,0.4
+Escape Protocol,IKO,U,0.4
+Unbreakable Bond,IKO,U,0.4
+Rooting Moloch,IKO,U,0.4
+Charge of the Forever-Beast,IKO,U,0.4
+Boon of the Wish-Giver,IKO,U,0.4
+Sonorous Howlbonder,IKO,U,0.4
+Blitz of the Thunder-Raptor,IKO,U,0.4
+Chittering Harvester,IKO,U,0.4
+Skull Prophet,IKO,U,0.4
+Stormwild Capridor,IKO,U,0.39
+Auspicious Starrix,IKO,U,0.39
+Archipelagore,IKO,U,0.39
+Glowstone Recluse,IKO,U,0.39
+Of One Mind,IKO,C,0.39
+Back for More,IKO,U,0.39
+Clash of Titans,IKO,U,0.39
+Exuberant Wolfbear,IKO,U,0.39
+General's Enforcer,IKO,U,0.39
+Valiant Rescuer,IKO,U,0.39
+Fight as One,IKO,U,0.39
+Proud Wildbonder,IKO,U,0.38
+Huntmaster Liger,IKO,U,0.38
+Pollywog Symbiote,IKO,U,0.38
+Indatha Crystal,IKO,U,0.38
+Trumpeting Gnarr,IKO,U,0.37
+Titanoth Rex,IKO,U,0.37
+Grimdancer,IKO,U,0.36
+Savai Thundermane,IKO,U,0.36
+Ivy Elemental,IKO,U,0.35
+Keensight Mentor,IKO,U,0.35
+Sanctuary Smasher,IKO,U,0.35
+Mysterious Egg,IKO,C,0.35
+Swallow Whole,IKO,U,0.35
+Splendor Mare,IKO,U,0.35
+Void Beckoner,IKO,U,0.35
+Weaponize the Monsters,IKO,U,0.35
+Monstrous Step,IKO,U,0.35
+Sanctuary Lockdown,IKO,U,0.35
+Hornbash Mentor,IKO,U,0.35
+Zagoth Mamba,IKO,U,0.34
+Drannith Stinger,IKO,C,0.31
+Bushmeat Poacher,IKO,C,0.26
+Fertilid,IKO,C,0.26
+Whisper Squad,IKO,C,0.26
+Fire Prophecy,IKO,C,0.26
+Keep Safe,IKO,C,0.26
+Farfinder,IKO,C,0.26
+Heightened Reflexes,IKO,C,0.25
+Memory Leak,IKO,C,0.25
+Glimmerbell,IKO,C,0.25
+Thieving Otter,IKO,C,0.25
+Ferocious Tigorilla,IKO,C,0.25
+Boot Nipper,IKO,C,0.25
+Corpse Churn,IKO,C,0.25
+Prickly Marmoset,IKO,C,0.25
+Dark Bargain,IKO,C,0.25
+Excavation Mole,IKO,C,0.25
+Mutual Destruction,IKO,C,0.25
+Survivors' Bond,IKO,C,0.25
+Scoured Barrens,IKO,C,0.25
+Thornwood Falls,IKO,C,0.25
+Patagia Tiger,IKO,C,0.25
+Pyroceratops,IKO,C,0.25
+Tentative Connection,IKO,C,0.25
+Helica Glider,IKO,C,0.25
+Frost Lynx,IKO,C,0.25
+Spontaneous Flight,IKO,C,0.25
+Garrison Cat,IKO,C,0.25
+Tranquil Cove,IKO,C,0.25
+Nightsquad Commando,IKO,C,0.25
+Wind-Scarred Crag,IKO,C,0.25
+Frenzied Raptor,IKO,C,0.25
+Almighty Brushwagg,IKO,C,0.25
+Spelleater Wolverine,IKO,C,0.25
+Blitz Leech,IKO,C,0.25
+Serrated Scorpion,IKO,C,0.25
+Aegis Turtle,IKO,C,0.25
+Flycatcher Giraffid,IKO,C,0.25
+Blisterspit Gremlin,IKO,C,0.25
+Suffocating Fumes,IKO,C,0.25
+Humble Naturalist,IKO,C,0.25
+Blazing Volley,IKO,C,0.25
+Anticipate,IKO,C,0.25
+Frostveil Ambush,IKO,C,0.25
+Essence Scatter,IKO,C,0.25
+Unexpected Fangs,IKO,C,0.25
+Shredded Sails,IKO,C,0.25
+Blood Curdle,IKO,C,0.25
+Adventurous Impulse,IKO,C,0.25
+Lava Serpent,IKO,C,0.25
+Savai Sabertooth,IKO,C,0.25
+Wingfold Pteron,IKO,C,0.25
+Unlikely Aid,IKO,C,0.25
+Dead Weight,IKO,C,0.25
+Raking Claws,IKO,C,0.25
+Ram Through,IKO,C,0.25
+Phase Dolphin,IKO,C,0.25
+Cavern Whisperer,IKO,C,0.25
+Plummet,IKO,C,0.25
+Dreamtail Heron,IKO,C,0.25
+Adaptive Shimmerer,IKO,C,0.25
+Durable Coilbug,IKO,C,0.25
+Gust of Wind,IKO,C,0.25
+Convolute,IKO,C,0.25
+Blade Banish,IKO,C,0.25
+Honey Mammoth,IKO,C,0.25
+Coordinated Charge,IKO,C,0.25
+Sleeper Dart,IKO,C,0.25
+Daysquad Marshal,IKO,C,0.25
+Vulpikeet,IKO,C,0.25
+Greater Sandwurm,IKO,C,0.25
+Hampering Snare,IKO,C,0.25
+Springjaw Trap,IKO,C,0.25
+Divine Arrow,IKO,C,0.25
+Imposing Vantasaur,IKO,C,0.25
+Drannith Healer,IKO,C,0.25
+Bloodfell Caves,IKO,C,0.25
+Sudden Spinnerets,IKO,C,0.25
+Maned Serval,IKO,C,0.25
+Blossoming Sands,IKO,C,0.25
+Perimeter Sergeant,IKO,C,0.25
+Crystacean,IKO,C,0.25
+Snare Tactician,IKO,C,0.25
+Swiftwater Cliffs,IKO,C,0.25
+Solid Footing,IKO,C,0.25
+Startling Development,IKO,C,0.25
+Gloom Pangolin,IKO,C,0.25
+Bristling Boar,IKO,C,0.25
+Cloudpiercer,IKO,C,0.25
+Pacifism,IKO,C,0.25
+Fully Grown,IKO,C,0.25
+Thwart the Enemy,IKO,C,0.25
+Go for Blood,IKO,C,0.25
+Forbidden Friendship,IKO,C,0.25
+Capture Sphere,IKO,C,0.25
+Cathartic Reunion,IKO,C,0.25
+Wilt,IKO,C,0.25
+Mosscoat Goriak,IKO,C,0.25
+Light of Hope,IKO,C,0.25
+Checkpoint Officer,IKO,C,0.25
+Essence Symbiote,IKO,C,0.25
+Migratory Greathorn,IKO,C,0.25
+Dismal Backwater,IKO,C,0.25
+Evolving Wilds,IKO,C,0.25
+Lurking Deadeye,IKO,C,0.25
+Jungle Hollow,IKO,C,0.25
+Rumbling Rockslide,IKO,C,0.25
+Facet Reader,IKO,C,0.25
+Rugged Highlands,IKO,C,0.25
